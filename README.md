@@ -1,4 +1,5 @@
 # html_codecademy
+[html cheatsheet](https://www.codecademy.com/learn/learn-html/modules/learn-html-forms/cheatsheet)
 
 ## Forms input types
 
@@ -29,3 +30,33 @@ The value of the selected/checked `<input>’s` name and value attribute of this
 <input type="checkbox" name="breakfast" value="pancakes">Pancakes 🥞<br>
 ```
 When using an HTML input element, the type="checkbox" attribute will render a single checkbox item. To create a group of checkboxes related to the same topic, they should all use the same name attribute. Since it’s a checkbox, multiple checkboxes can be selected for the same topic.
+
+### `required` Attribute
+```
+<input type="password" name="password" required >
+```
+The example code block shows an input field that is required. The attribute can be written as required="true" or simply required.
+
+### `<input> name` Attribute
+```
+<input name="username" id="username" />
+<input id="address" />
+```
+In order for a form to send data, it needs to be able to put it into key-value pairs. This is achieved by setting the **name attribute** of the input element. The name will become the key and the value of the input will become the value the form submits corresponding to the key.
+
+It’s important to remember that the name is not the same as the ID in terms of form submission. The ID and the name of the input may be the same, but the value will only be submitted if the name attribute is specified.
+
+In the code example, the first input will be submitted by the form, but the second one will not.
+
+### `min` Attribute
+`<input type="number" name="rating" min="1" max="10">`
+In HTML, input fields with type number have an attribute called min that specifies the minimum value that can be entered into the field. The code block provided shows an input number field that accepts a number with minimum value 1.
+
+### `<input>`: Number Type
+`<input type="number" name="balance" />`
+HTML input elements can be of type number. These input fields allow the user to enter only numbers and a few special characters inside the field.
+
+The example code block shows an input with a type of number and a name of balance. When the input field is a part of a form, the form will receive a key-value pair with the format: name: value after form submission.
+
+### HTML Form Validators
+HTML forms allow you to specify different kinds of validation for your input fields to make sure that data is entered correctly before being submitted. HTML supports a number of different validators, including things like minimum value, minimum/maximum length, etc. The validators are specified as attributes on the input field.
