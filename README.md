@@ -1,7 +1,25 @@
 # html_codecademy
 [html cheatsheet](https://www.codecademy.com/learn/learn-html/modules/learn-html-forms/cheatsheet)
 
-## Forms input types
+# Contents
++ [3.2 Forms input types](#forms-input-types)
+    + [`<input>`: Range type](#input-range-type)
+    + [Submittable Input](#submittable-input)
+    + [`maxlength` Attribute](#maxlength-attribute)
+    + [`<input>`: Radio Button Type](#input-radio-button-type)
+    + [`<input>`: Checkbox Type](#input-checkbox-type)
+    + [`required` Attribute](#required-attribute)
+    + [`<input> name` Attribute](#input-name-attribute)
+    + [`min` Attribute](#min-attribute)
+    + [`<input>`: Number Type](#input-number-type)
+    + [HTML Form Validators](#html-form-validators)
++ [3.3 Submitting a Form](#submitting-a-form)
+    + [`pattern` Attribute](#pattern-attribute)
+    + [`<datalist>` Element](#datalist-element)
+    + [`minlength` Attribute](#minlength-attribute)
+
+
+## 3.2 Forms input types
 
 ### `<input>`: Range type
 ```
@@ -60,3 +78,46 @@ The example code block shows an input with a type of number and a name of balanc
 
 ### HTML Form Validators
 HTML forms allow you to specify different kinds of validation for your input fields to make sure that data is entered correctly before being submitted. HTML supports a number of different validators, including things like minimum value, minimum/maximum length, etc. The validators are specified as attributes on the input field.
+
+
+## 3.3 Submitting a Form
+`<form action="/index3.html" method="PUT"></form>`
+The `action` attribute tells the form to send the information. A URL is assigned that determines the recipient of the information. The `method` attribute tells the form what to do with that information once it’s sent. An HTTP verb is assigned to the `method` attribute that determines the action to be performed.
+
+### `pattern` Attribute
+```
+<form action="/action_page.php">
+  Country code: 
+  <input type="text" name="country_code" 
+         pattern="[A-Za-z]{3}" 
+         title="Three letter country code">
+  <input type="submit">
+</form>
+```
+In a `text` input element, the pattern attribute uses a regular expression to match against (or validate) the value of the `<input>`, when the form is submitted.
+
+### `<datalist>` Element
+```
+<input list="ide">
+  
+<datalist id="ide">
+  <option value="Visual Studio Code" />
+  <option value="Atom" />
+  <option value="Sublime Text" />
+</datalist>
+```
+When using an HTML input, a basic search/autocomplete functionality can be achieved by pairing an `<input>` with a `<datalist>`. To pair a `<input>` with a `<datalist>` the `<input>`’s list value must match the value of the id of the `<datalist>`. The datalist element is used to store a list of `<option>`s.
+
+The list of data is shown as a dropdown on an `input` field when a user clicks on the input field. As the user starts typing, the list will be updated to show elements that best match what has been typed into the input field. The actual list items are specified as multiple option elements nested inside the `datalist`.
+
+### `minlength` Attribute
+`<input type="text" name="username" required minlength="6" />`
+In HTML, an input field of type text has an attribute that supports minimum length validation. To check that the input text has a minimum length, add the `minlength` attribute with the character count.
+
+### `textarea` Element
+`<textarea rows="10" cols="30" name="comment"></textarea>`
+The `textarea` element is used when creating a text-box for multi-line input (e.g. a comment section). The element supports the `rows` and `cols` attributes which determine the height and width, respectively, of the element.
+
+When rendered by the browser, `textarea` fields can be stretched/shrunk in size by the user, but the `rows` and `cols` attributes determine the initial size.
+
+Unlike the `input` element, the `<textarea>` element has both opening and closing tags. The `value` of the element is the content in between these tags (much like a `<p>` element). The code block shows a `<textarea>` of size 10x30 and with a `name` of "comment".
