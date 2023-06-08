@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Form a Story</title>
+  </head>
+  <body>
+    <section id="top">
+      <img src="https://content.codecademy.com/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo">
+    </section>
+
+    <section id="main">
+      <h1>Complete the Form -<br> Complete the Story!</h1>
+      <hr>
+      <!--Add your form below:-->
+      <form action="story.html" method="GET">
+        <section>
+          <label for="animal-1">Animal: </label>
+          <br>
+          <input type="text" name="animal-1" id="animal-1" value="Ozelot" pattern="[A-Za-z]{2,15}" title="2-15 letters only">
+        </section>
+        <section>
+          <label for="animal-2">Another Animal: </label>
+          <br>
+          <input type="text" name="animal-2" id="animal-2" required value="Turtle" pattern="[A-Za-z]{2,15}">
+        </section>
+        <section>
+          <label for="animal-3">One More Animal: </label>
+          <br>
+          <input type="text" name="animal-3" id="animal-3" required value="Owl" pattern="[A-Za-z]{2,15}"> 
+        </section>
+        <section>
+          <label for="adj-1">Adjective (ends in -ed): </label>
+          <br>
+          <input type="text" name="adj-1" id="adj-1" required value="astonished" pattern="[A-Za-z]{2,15}"> 
+        </section>
+        <section>
+          <label for="verb-1">Verb (ends in -ing): </label>
+          <br>
+          <input type="text" name="verb-1" id="verb-1" required value="bolting" pattern="[A-Za-z]{2,15}"> 
+        </section>
+        <section>
+          <label for="num-1">Number: </label>
+          <br>
+          <input type="number" name="num-1" id="num-1" required min="1" max="101" value="11"> 
+        </section>
+        <section>
+          <span>Yes or No</span>
+          <br>
+          <input type="radio" id="yes" name="answer" checked>
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="answer" required>
+          <label for="no">No</label>
+        </section>
+        <section>
+          <label for="speed">Relative speed (ends in -er): </label>
+          <select name="speed" id="speed">
+            <option value="faster">faster</option>
+            <option value="slower">slower</option>
+            <option value="quicker">quicker</option>
+          </select>
+          <br>
+        </section>
+        <section>
+          <label for="quote">Motivational Quote: </label>
+          <input type="text" id="quote" name="quote" required list="quote-choices" maxlength="20" value="Select or type your own" style="width:160px;">
+          <datalist id="quote-choices">
+            <option value="winner gets ice cream!"></option>
+            <option value="grass is always greener on the other side"></option>
+            <option value="seek and you shall find"></option>
+          </datalist>
+          <br>
+        </section>
+        <section>
+          <label for="message">Meaningful Message: </label>
+          <textarea id="message" name="message" required rows="8" cols="40" maxlength="150"></textarea>
+          <br>
+        </section>
+        <section>
+          <input type="submit" value="Form My Story!">
+        </section>
+      </form>
+    </section>
+  </body>
+</html>
