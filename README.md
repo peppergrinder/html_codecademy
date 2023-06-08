@@ -46,7 +46,7 @@ To add fields for users to input information we use the `<input>` element and se
 - type to "range" creates a slider to select from a range of numbers.
 - type to "checkbox" creates a single checkbox that can be paired with other checkboxes.
 - type to "radio" creates a radio button that can be paired with other radio buttons.
-- type to "text" and adding the list attribute will pair the `<input>` with a `<datalist>` element if the list of `<input>` and the id of `<datalist>` are the same.
+- type to "text" and adding the list attribute will pair the `<input>` with a `<datalist>` element if the **list** of `<input>` and the **id** of `<datalist>` are the same.
 - type to "submit" creates a submit button.
 - A `<select>` element is populated with `<option>` elements and renders a dropdown list selection.
 - A `<datalist>` element is populated with `<option>` elements and works with an `<input>` to search through choices.
@@ -73,14 +73,14 @@ The HTML `<form>` element is used to collect and send information to an external
 ### `<datalist>` Element
 ```
 <input list="ide" style="width:160px;">
-  
+
 <datalist id="ide">
   <option value="Visual Studio Code" />
   <option value="Atom" />
   <option value="Sublime Text" />
 </datalist>
 ```
-When using an HTML input, a basic search/autocomplete functionality can be achieved by pairing an `<input>` with a `<datalist>`. To pair a `<input>` with a `<datalist>` the `<input>`’s list value must match the value of the id of the `<datalist>`. The datalist element is used to store a list of `<option>`s.
+When using an HTML input, a basic search/autocomplete functionality can be achieved by pairing an `<input>` with a `<datalist>`. To pair a `<input>` with a `<datalist>` the `<input>`’s **list** value must match the value of the **id** of the `<datalist>`. The datalist element is used to store a list of `<option>`s.
 
 The list of data is shown as a dropdown on an `input` field when a user clicks on the input field. As the user starts typing, the list will be updated to show elements that best match what has been typed into the input field. The actual list items are specified as multiple option elements nested inside the `datalist`.
 
