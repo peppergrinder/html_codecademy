@@ -26,6 +26,7 @@
         + [Regex](#regexmatching-a-pattern)
         + [Review Client Side Validation](#review---client-side-validation)
 + [3.4 Submitting a Form](#34-submitting-a-form)
++ [4.0 Semantic HTML](#40-semantic-html)
     
 
 
@@ -236,3 +237,6 @@ These quick checks help ensure that input data is correct and safe for our serve
 <form action="/index3.html" method="PUT"></form>
 ```
 The `action` attribute tells the form to send the information. A URL is assigned that determines the recipient of the information. The `method` attribute tells the form what to do with that information once it’s sent. An HTTP verb is assigned to the `method` attribute that determines the action to be performed.
+
+## 4.0 Semantic HTML
+![semantic html comparison](/resources/images/SemanticVSNonSemantic_Diagram_Updated_1.svg "Semantic HTML")
