@@ -27,6 +27,12 @@
         + [Review Client Side Validation](#review---client-side-validation)
 + [3.4 Submitting a Form](#34-submitting-a-form)
 + [4.0 Semantic HTML](#40-semantic-html)
+    + [`<figure>` and `<figcaption>`](#figure-and-figcaption)
+    + [Embedding media](#embedding-media)
+    + [`<aside>` Aside Element](#aside-aside-element)
+    + [Element Placement](#element-placement)
+    + [`<section>` and `<article>`](#section-and-article)
+    + [Review](#review-semantic-html)
     
 
 
@@ -241,7 +247,56 @@ The `action` attribute tells the form to send the information. A URL is assigned
 ## 4.0 Semantic HTML
 ![semantic html comparison](/resources/images/SemanticVSNonSemantic_Diagram_Updated_1.svg "Semantic HTML")
 
-### Review
+### `<figure>` and `<figcaption>`
+```
+<figure>
+ <img src="qwerty.jpg">
+ <figcaption>The image shows the layout of a qwerty keyboard.</figcaption>
+</figure>
+```
+The `<figure>` element is used to encapsulate media such as an image, diagram. or code snippet. The `<figcaption>` element is used to describe the media encapsulated within the `<figure>` element. Developers will normally use `<figcaption>` within the `<figure>` element to group the media and description. This way, if a developer decides to change the position of the media, the description will follow along with it.
+
+### Embedding media
+```
+<!--Video Tag - good practice to define type -->
+<video src="4kvideo.mp4" type="video/mp4">video not supported</video>
+ 
+<!--Audio Tag-->
+<audio src="koreanhiphop.mp3"></audio>
+ 
+<!--Embed tag-->
+<embed src="babyyoda.gif"/>
+```
+Semantic HTML introduces us to `<video>`, `<audio>` and `<embed>`. `<video>` allows us to add videos to our website. `<audio>` allows us to implement audio into our website. `<embed>` can be used to implement any type of media. These elements are universal in that they all use the src attribute to link the source of the content. `<video>` and `<audio>` requires a closing tag while **`<embed>` is a self-closing tag**.
+
+### `<aside>` Aside Element
+```
+<article>
+<!--Main Content-->
+</article>
+<aside>
+<!--Additional information-->
+</aside>
+```
+The `<aside>` element is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. Usually, this information would be in a sidebar or a location where it doesn’t obstruct the main piece of content. 
+
+### Element Placement
+Semantic HTML introduces elements that can tell developers exactly what the element does or where it’s placed based on the name of that element. Some of these elements are `<header>`, `<nav>`, `<main>`, and `<footer>`. `<header>` describes the content at the top of the page `<body>`. It may include a logo, navigational links or a search bar. `<nav>` encapsulates the page’s navigational links. It is often placed inside the `<header>` or `<footer>`. `<main>` encapsulates the main content of a page between the header/navigation and the footer areas. `<footer>` includes the page’s footer content at the bottom of the `<body>`.
+
+### `<section>` and `<article>`
+```
+<section>
+  <!--defines theme-->
+  <h2>Top Sports league in America</h2>
+<!--writes independent content relating to that theme-->
+  <article>
+    <p>One of the top sports league is the nba.</p>
+  </article>
+</section>
+```
+`<section>` defines elements in a document, such as chapters, headings, or any other area of the document with the same theme. `<article>` holds content that makes sense on its own such as articles, blogs, and comments. Generally developers will use `<section>` to define a theme for the webpage and use `<article>` to write independent content for that theme. This does not mean that `<article>` has to be used with `<section>`.
+
+### Review Semantic HTML
 
 Semantic HTML introduces meaning to a page through specific elements that provide context as to what is in between the tags.
 Semantic HTML is a modern standard and makes a website accessible for people who use screen readers to translate the webpage and improves your website’s SEO.
