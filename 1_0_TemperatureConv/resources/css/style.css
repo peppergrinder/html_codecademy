@@ -29,28 +29,28 @@ body{
 }
 
 .Temperature-icon{
-    font-size: 45px;
+    font-size: 25px;
     color: #fff;
 }
 
 h1{
     color: #fff;
-    letter-spacing: 1.2px;
-    font-size: 30px;
+    letter-spacing: 1px;
+    font-size: 20px;
 }
 
 #celsius, #fahrenheit, #kelvin{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 input{
     flex: 5;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 600;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 400;
     text-align: center;
     border: none;
     outline: none;
@@ -68,16 +68,17 @@ input::-webkit-inner-spin-button{
 /* for Mozila firefox */
 input{
     -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 
 .icon{
     flex: 1;
-    height: 60px;
-    line-height: 60px;
+    height: 30px;
+    line-height: 30px;
     padding: 0 5px;
     text-align: center;
-    font-size: 30px;
+    font-size: 16px;
     background: #4d5964;
     color: #fff;
     border-radius: 0 8px 8px 0;
@@ -93,9 +94,9 @@ input{
 .button button{
     border: none;
     outline: none;
-    padding: 10px 30px;
-    font-size: 20px;
-    font-weight: 600;
+    padding: 5px 5px;
+    font-size: 16px;
+    font-weight: 500;
     border-radius: 3px;
     cursor: pointer;
     transition: 0.3s;
