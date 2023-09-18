@@ -39,7 +39,7 @@ h1{
     font-size: 20px;
 }
 
-#celsius, #fahrenheit, #kelvin{
+#celsius, #fahrenheit, #kelvin, #kilometer, #miles, #feet {
     display: flex;
     justify-content: center;
     align-items: center;
