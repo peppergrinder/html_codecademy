@@ -28,7 +28,7 @@ body{
     gap: 10px;
 }
 
-.Temperature-icon{
+.Temperature-icon, .Road-icon{
     font-size: 25px;
     color: #fff;
 }
