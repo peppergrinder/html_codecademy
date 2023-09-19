@@ -17,15 +17,23 @@
   <nav>
     <ul>
       <li><a class="link--cta" href="https://peppergrinder.github.io/html_codecademy/0_5_CSSfloat/">0_5_CSSfloat</a></li>
-      <li><a class="link--cta" href="https://peppergrinder.github.io/html_codecademy/1_0_TemperatureConv/" target="content--frame">1_0_TemperatureConv</a></li>
+      <li><a class="link--cta" href="https://peppergrinder.github.io/html_codecademy/1_0_TemperatureConv/">1_0_TemperatureConv</a></li>
       <li><a class="link--cta" href="https://peppergrinder.github.io/html_codecademy/1_1_DistanceConv/">1_1_DistanceConv</a></li>
       <li><a class="link--cta" href="https://peppergrinder.github.io/html_codecademy/3_1_DaviesBurgers/">3_1_DaviesBurgers</a></li>
       <li><a class="link--cta" href="https://peppergrinder.github.io/html_codecademy/3_2_TurtleHare/">3_2_TurtleHare</a></li>
       <li><a class="link--cta" href="https://peppergrinder.github.io/html_codecademy/4_0_SemanticHTML/">4_0_SemanticHTML</a></li>
     </ul>
+    <h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
   </nav>
   
-  <article name="content--frame">
+  <article id="content--frame">
     <ul>
         <li> <code class="w3-codespan">&lt;header&gt;</code> - Defines a header for a document or a section</li>
         <li> <code class="w3-codespan">&lt;nav&gt;</code> - Defines a set of navigation links</li>
