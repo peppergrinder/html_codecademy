@@ -62,6 +62,17 @@ When a `<form>` is submitted, the name of the fields that accept input and the v
 Using the `<form>` element in conjunction with the other elements listed above allows us to create sites that take into consideration the wants and needs of our users.
 
 ### `<form>` Element
+
+<form method="post" action="http://server1">
+  Enter your name:
+  <input type="text" name="fname">
+  <br/>
+  Enter your age:
+  <input type="text" name="age">
+  <br/>
+  <input type="submit" value="Submit">
+</form>
+
 ```
 <form method="post" action="http://server1">
   Enter your name:
@@ -78,6 +89,15 @@ The HTML `<form>` element is used to collect and send information to an external
 `<form>` can contain various input elements. When a user submits the form, information in these input elements is passed to the source which is named in the action attribute of the form.
 
 ### `<datalist>` Element
+
+<input list="ide" style="width:160px;">
+
+<datalist id="ide">
+  <option value="Visual Studio Code" />
+  <option value="Atom" />
+  <option value="Sublime Text" />
+</datalist>
+
 ```
 <input list="ide" style="width:160px;">
 
@@ -92,6 +112,13 @@ When using an HTML input, a basic search/autocomplete functionality can be achie
 The list of data is shown as a dropdown on an `input` field when a user clicks on the input field. As the user starts typing, the list will be updated to show elements that best match what has been typed into the input field. The actual list items are specified as multiple option elements nested inside the `datalist`.
 
 ### `<select>` Element
+
+<select name="rental-option">
+  <option value="small">Small</option>
+  <option value="family">Family Sedan</option>
+  <option value="lux">Luxury</option>
+</select>
+
 ```
 <select name="rental-option">
   <option value="small">Small</option>
@@ -135,17 +162,33 @@ It’s important to remember that the name is not the same as the ID in terms of
 In the code example, the first input will be submitted by the form, but the second one will not.
 
 ### `<input>`: Range type
+
+<input type="range" name="movie-rating" min="0" max="10" step="0.1">
+
 ```
 <input type="range" name="movie-rating" min="0" max="10" step="0.1">
 ```
 A slider can be created by using the type="range" attribute on an HTML input element.
 
 ### `<input>`: Radio Button Type
+
+<span>i can haz cheezburger?</span>
+<br>
+<input type="radio" name="cheese" id="yes" value="yes">
+<label for="yes">Yes</label>
+<input type="radio" name="cheese" id="no" value="yes">
+<label for="no">No</label>
+
 HTML `<input>` elements can be given a type="radio" attribute that renders a single radio button. Multiple radio buttons of a related topic are given the same name attribute value. Only a single option can be chosen from a group of radio buttons.
 
 The value of the selected/checked `<input>’s` name and value attribute of this element are sent as a key-value pair when the form is submitted.
 
 ### `<input>`: Checkbox Type
+
+<input type="checkbox" name="breakfast" value="bacon" checked>Bacon 🥓<br>
+<input type="checkbox" name="breakfast" value="eggs">Eggs 🍳<br>
+<input type="checkbox" name="breakfast" value="pancakes">Pancakes 🥞<br>
+
 ```
 <input type="checkbox" name="breakfast" value="bacon" checked>Bacon 🥓<br>
 <input type="checkbox" name="breakfast" value="eggs">Eggs 🍳<br>
