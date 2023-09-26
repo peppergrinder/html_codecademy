@@ -1,6 +1,8 @@
 # 3.1 HTML FORMS
 [html forms cheatsheet](https://www.codecademy.com/learn/learn-html/modules/learn-html-forms/cheatsheet)
 
+This .md includes <html> tags that are not rendered within github. View raw file in browser and use md viewer extension, i.e. Markdown Preview Plus for Chrome.
+
 # Contents
 + [3.1 HTML Forms](#31-html-forms)
     + [Review](#review)
@@ -130,7 +132,7 @@ The HTML `<select>` element can be used to create a dropdown list. A list of cho
 
 The value of the selected `<select>`’s name and the `<option>`’ s value attribute are sent as a key-value pair when the form is submitted.
 
-### `textarea` Element
+### `<textarea>` Element
 ```
 <textarea rows="10" cols="30" name="comment" maxlength="150"></textarea>
 ```
