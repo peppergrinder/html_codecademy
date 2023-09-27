@@ -6,14 +6,20 @@
     <title>Perspective</title>
     <style>
         .frame {
-            width: 500px;
-            height: 500px;
+            width: 400px;
+            height: 400px;
             border: 3px solid rebeccapurple;
+            perspective: 400px;
         }
         .shape {
-            width: 500px;
-            height: 500px;
+            width: 400px;
+            height: 400px;
             background-color: lightgreen;
+            transition: all 3s ease;
+            
+        }
+        .shape:hover {
+            transform: rotateY(45deg);
         }
     </style>
 </head>
