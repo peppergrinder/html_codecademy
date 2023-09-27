@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <title>clip-path</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            background-color: rebeccapurple;
+            clip-path: circle(50% at 0 0);
+            transition: all 2s ease;
+        }
+        .container:hover {
+            clip-path: circle(100%);
+        }
+        .containerPoly {
+            width: 500px;
+            height: 500px;
+            background-color: rgb(24, 187, 60);
+            clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+            /* https://bennettfeely.com/clippy/ */
+            transition: all 2s ease;  
+        }
+        .containerPoly:hover {
+            clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="containerPoly"></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filters css</title>
+    <style>
+        input {
+            padding: 20px;
+            border: 1px solid blue;
+            caret-color: chartreuse;
+        }
+        input:focus {
+            outline: 1px solid red;
+        }
+        input::placeholder {
+            color: blueviolet;
+        }
+
+        img {
+            filter: blur(10px);
+        }
+        img:active {
+            filter: none;
+            outline: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Search...">
+    <img src="resources/images/flower.jpg">
+</body>
+</html>
