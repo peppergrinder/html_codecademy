@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>LAMA DEV CSS TIPS AND TRICKS</title>
   </head>
   <body>
+        <!-- Navbar (Sits on top) -->
+        <div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
+            <a href="index.html" class="w3-bar-item w3-button"><b><span class='mirror'>R</span>R</b> Productions</a>
+    
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="clip-path.html" class="w3-bar-item w3-button">Clip Path</a>
+                <a href="perspective.html" class="w3-bar-item w3-button">Perspective</a>
+                <a href="filters.html" class="w3-bar-item w3-button">Filters</a>
+            </div>
+    
+        </div>
+
     <!-- CLIP PATH-->
     <div class="container"></div>
 
@@ -19,7 +33,7 @@
     <div class="player"></div>
 
     <!-- FILTER -->
-    <img src="/flower.jpg" alt="" />
+    <img src="resources/images/flower.jpg" alt="" />
     <p class="spoiler">He dies at the end :(</p>
 
     <!-- INPUT OUTLINE PLACEHOLDER CARET -->
@@ -84,7 +98,7 @@
 
     <!--CAPTIONS-->
     <video src="https://peppergrinder.github.io/git_practice/excursion/resources/videos/excursion.mp4" controls>
-      <track kind="captions" label="En" src="/captions.vtt" />
+      <track kind="captions" label="En" src="resources/captions/captions.vtt" />
     </video>
   </body>
 </html>
