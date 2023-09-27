@@ -83,7 +83,7 @@
         </div>
       </div>
       <div class="review">
-        <button>Show spoiler</button>
+        <button id="toggleFilterButton">Show spoiler</button>
         <div class="content">
           <h1>Post2</h1>
           <p>
@@ -95,6 +95,14 @@
         </div>
       </div>
     </div>
+    <script>
+      const toggleFilterButton = document.getElementById('toggleFilterButton');
+      const contentElement = document.querySelector('.review:has(button) .content');
+
+      toggleFilterButton.addEventListener('click', () => {
+          contentElement.style.filter = contentElement.style.filter === 'none' ? 'blur(10px)' : 'none';
+      });
+  </script>
 
     <!--CAPTIONS-->
     <video class="w3-content" src="https://peppergrinder.github.io/git_practice/excursion/resources/videos/excursion.mp4" controls>

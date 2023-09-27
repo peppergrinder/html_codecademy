@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button to remove Filters</title>
+    <style>
+    .review:has(button) .content {
+        filter: blur(10px);
+    }
+    </style>
+</head>
+<body>
+    <div class="review">
+        <div class="content">
+          <h1>Post1</h1>
+          <p>
+            Quae iusto, voluptatum adipisci corporis itaque ab soluta eum aliquid
+            quas ipsum sint fuga dolorem?
+          </p>
+        </div>
+      </div>
+      <div class="review">
+        <button id="toggleFilterButton">Show spoiler</button>
+        <div class="content">
+          <h1>Post2</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+        const toggleFilterButton = document.getElementById('toggleFilterButton');
+        const contentElement = document.querySelector('.review:has(button) .content');
+
+        toggleFilterButton.addEventListener('click', () => {
+            contentElement.style.filter = contentElement.style.filter === 'none' ? 'blur(10px)' : 'none';
+        });
+    </script>
+    
+</body>
+</html>
