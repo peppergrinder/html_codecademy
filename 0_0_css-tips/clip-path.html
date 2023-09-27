@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="./style.css"> -->
     <title>clip-path</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
         .container {
-            width: 500px;
-            height: 500px;
+            width: 400px;
+            height: 400px;
             background-color: rebeccapurple;
             clip-path: circle(50% at 0 0);
             transition: all 2s ease;
@@ -17,8 +18,8 @@
             clip-path: circle(100%);
         }
         .containerPoly {
-            width: 500px;
-            height: 500px;
+            width: 400px;
+            height: 400px;
             background-color: rgb(24, 187, 60);
             clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
             /* https://bennettfeely.com/clippy/ */
@@ -30,6 +31,20 @@
     </style>
 </head>
 <body>
+    
+    <!-- Navbar (Sits on top) -->
+    <div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="index.html" class="w3-bar-item w3-button"><b>css examples</b></a>
+
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+            <a href="clip-path.html" class="w3-bar-item w3-button">Clip Path</a>
+            <a href="perspective.html" class="w3-bar-item w3-button">Perspective</a>
+            <a href="filters.html" class="w3-bar-item w3-button">Filters</a>
+        </div>
+
+    </div>
+
     <div class="container"></div>
     <div class="containerPoly"></div>
 </body>
